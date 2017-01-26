@@ -53,6 +53,7 @@ public class Ringtone extends Service {
 
         if (!this.isMusicOn && startId == 1){
             song = MediaPlayer.create(this, R.raw.pentakill);
+            song.setLooping(true);
             song.start();
 
             this.isMusicOn = true;
